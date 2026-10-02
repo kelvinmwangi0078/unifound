@@ -1,0 +1,7 @@
+{
+  "name": "UniFound - Campus Lost & Found Management System",
+  "description": "A centralized digital lost and found management platform for university students and administrators to report, match, track, and verify misplaced campus items.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

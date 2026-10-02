@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom Collegiate Burgundy / Maroon Theme matching user specification (#5C1D2D) */
+:root {
+  --color-maroon: #5C1D2D;
+  --color-maroon-hover: #481421;
+  --color-maroon-dark: #380E19;
+  --color-maroon-light: #FBF2F4;
+  --color-maroon-border: #E8CCD2;
+}
+
+.bg-maroon {
+  background-color: #5C1D2D !important;
+}
+.bg-maroon-hover:hover {
+  background-color: #481421 !important;
+}
+.text-maroon {
+  color: #5C1D2D !important;
+}
+.border-maroon {
+  border-color: #5C1D2D !important;
+}
+.bg-maroon-light {
+  background-color: #FBF2F4 !important;
+}
+.border-maroon-border {
+  border-color: #E8CCD2 !important;
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
