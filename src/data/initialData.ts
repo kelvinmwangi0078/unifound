@@ -1,5 +1,23 @@
 import { Student, SecurityOfficer, Admin, AppUser, Item, Claim, Notification, AuditLog } from '../types';
 
+import studentIdImg from '../assets/images/lost_found_student_id_1790951792059.jpg';
+import hpLaptopImg from '../assets/images/lost_found_laptop_1790951805557.jpg';
+import backpackImg from '../assets/images/lost_found_backpack_1790951818952.jpg';
+import phoneImg from '../assets/images/lost_found_phone_1790951831307.jpg';
+import spectreImg from '../assets/images/spectre_laptop_1790953733989.jpg';
+import keysImg from '../assets/images/brass_room_keys_1790953704133.jpg';
+import calcImg from '../assets/images/casio_calculator_1790953718876.jpg';
+
+export const ASSET_IMAGES = {
+  studentId: 'https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80',
+  hpLaptop: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80',
+  backpack: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80',
+  phone: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80',
+  spectre: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80',
+  keys: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=800&q=80',
+  calculator: 'https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48f?auto=format&fit=crop&w=800&q=80'
+};
+
 export const INITIAL_STUDENTS: Student[] = [
   {
     student_id: 101,
@@ -136,7 +154,7 @@ export const INITIAL_ITEMS: Item[] = [
     date_reported: '2026-09-29',
     date_occurred: '2026-09-29',
     status: 'Found',
-    image_url: '/src/assets/images/lost_found_student_id_1790951792059.jpg',
+    image_url: ASSET_IMAGES.studentId,
     storage_location: 'Central Security Gatehouse, Locker A-04',
     unique_identifier_hint: 'What is the last 4 digits of the National ID and student admission year?',
     reporter_id: 201,
@@ -155,7 +173,7 @@ export const INITIAL_ITEMS: Item[] = [
     date_reported: '2026-09-30',
     date_occurred: '2026-09-30',
     status: 'Claim_Pending',
-    image_url: '/src/assets/images/lost_found_laptop_1790951805557.jpg',
+    image_url: ASSET_IMAGES.hpLaptop,
     storage_location: 'Gate A High-Value Safe #2',
     unique_identifier_hint: 'What specific tech sticker is on the palm rest beside the fingerprint scanner?',
     reporter_id: 102,
@@ -174,7 +192,7 @@ export const INITIAL_ITEMS: Item[] = [
     date_reported: '2026-10-01',
     date_occurred: '2026-10-01',
     status: 'Found',
-    image_url: '/src/assets/images/lost_found_backpack_1790951818952.jpg',
+    image_url: ASSET_IMAGES.backpack,
     storage_location: 'Central Security Gatehouse, Bin C-12',
     unique_identifier_hint: 'Describe the keyholder charm and keychain attached to the front zipper.',
     reporter_id: 201,
@@ -193,7 +211,7 @@ export const INITIAL_ITEMS: Item[] = [
     date_reported: '2026-10-02',
     date_occurred: '2026-10-02',
     status: 'Found',
-    image_url: '/src/assets/images/lost_found_phone_1790951831307.jpg',
+    image_url: ASSET_IMAGES.phone,
     storage_location: 'Gate A High-Value Safe #1',
     unique_identifier_hint: 'What lock screen wallpaper photo or owner contact message appears when waking the screen?',
     reporter_id: 103,
@@ -212,7 +230,7 @@ export const INITIAL_ITEMS: Item[] = [
     date_reported: '2026-09-30',
     date_occurred: '2026-09-30',
     status: 'Lost',
-    image_url: '/src/assets/images/spectre_laptop_1790953733989.jpg',
+    image_url: ASSET_IMAGES.spectre,
     reporter_id: 101,
     reporter_name: 'Zawadi Kamau',
     reporter_email: 'zawadi.kamau@student.campus.ac.ke',
@@ -230,7 +248,7 @@ export const INITIAL_ITEMS: Item[] = [
     date_reported: '2026-10-01',
     date_occurred: '2026-10-01',
     status: 'Lost',
-    image_url: '/src/assets/images/brass_room_keys_1790953704133.jpg',
+    image_url: ASSET_IMAGES.keys,
     reporter_id: 101,
     reporter_name: 'Zawadi Kamau',
     reporter_email: 'zawadi.kamau@student.campus.ac.ke',
@@ -248,7 +266,7 @@ export const INITIAL_ITEMS: Item[] = [
     date_reported: '2026-09-28',
     date_occurred: '2026-09-28',
     status: 'Reunited',
-    image_url: '/src/assets/images/casio_calculator_1790953718876.jpg',
+    image_url: ASSET_IMAGES.calculator,
     storage_location: 'Handed over to verified student',
     unique_identifier_hint: 'Student name engraved with silver marker inside the hard cover',
     reporter_id: 201,
